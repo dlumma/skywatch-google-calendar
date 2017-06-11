@@ -16,3 +16,16 @@
 // it is attached to via a user installing and activating the add-on.
 /** @OnlyCurrentDoc */
 // Put additional production configuration here
+
+/**
+ * @param {myproj.json.Configuration} configuration
+ *     The current configuration settings.
+ * @return {myproj.json.Configuration} configuration
+ *     The current configuration settings, updated with test settings.
+ */
+ function provideEnvironmentConfiguration_(configuration) {
+  configuration.sheets.debugSpreadsheetId = '1wf-PRWDDEXLF2tZ15Rx-1IkWa45WTbifwloQGRuoJYM';
+  configuration.logSpreadsheetId = '1dnplEtJaTlB7KMpmerVwnKMuTP33IpLd_DIRvFFAoHE';
+  configuration.debug = true;
+  return configuration;
+}

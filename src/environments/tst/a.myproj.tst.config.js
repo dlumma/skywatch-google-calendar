@@ -26,5 +26,6 @@
  function provideEnvironmentConfiguration_(configuration) {
   configuration.sheets.debugSpreadsheetId = '104CRY9-5_C53dVD7SIlrsHTnwehqXq4W8V-FH24o7r4';
   configuration.logSpreadsheetId = '1GYifjafnH8anKwOK7UvJ3wD8a7vWhf10-KJs6sFWyWE';
+  configuration.debug = true;
   return configuration;
 }

@@ -4,7 +4,7 @@
 1. run `npm install -g node-google-apps-script` to install it globally. This will allow you to run a few of the steps below from the command line.
 2. Go through the [configuration and authorization steps](https://www.npmjs.com/package/node-google-apps-script).
 2. Run `npm install -g gulp` if you do not already have the [gulp](http://gulpjs.com/) task runner installed globally.
-3. Clone this repository, `cd skywatch`, and run `npm install`. This will set up all of the local dependencies for the project.
+3. Clone this repository, `cd skywatch-google-calendar`, and run `npm install`. This will set up all of the local dependencies for the project.
 
 ### Creating test, stage and production environ
 

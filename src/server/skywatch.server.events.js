@@ -180,15 +180,17 @@ function populate_04_2017() {
   createEvents('1Uqx77ct_DuIAFZ_PvD1LDwZy9oOl0EzktzJAC5MtLhE', "2017-04")
 }
 
+// May, 2017
+function populate_05_2017() {
+  createEvents('1Uqx77ct_DuIAFZ_PvD1LDwZy9oOl0EzktzJAC5MtLhE', "2017-05")
+}
+
+// June, 2017
+function populate_06_2017() {
+  createEvents('1Uqx77ct_DuIAFZ_PvD1LDwZy9oOl0EzktzJAC5MtLhE', "2017-06")
+}
+
 // Longrange 2017
 function populate_long_range_2017() {
   createEvents('1Uqx77ct_DuIAFZ_PvD1LDwZy9oOl0EzktzJAC5MtLhE', "Feb-Dec-LongRange")
-}
-
-function testBasic() {
-  createEvents('1uZriTVh2u4ZfyqqbZGvKNx9PGGUCc8sJ8XWMT1rj324', "Sheet1");
-}
-
-function testListEvents() {
-  listEvents('1Uqx77ct_DuIAFZ_PvD1LDwZy9oOl0EzktzJAC5MtLhE', "2016-12"); 
 }
