@@ -19,7 +19,7 @@
  * @return {String} HTML as string for Apps Script to render.
  */
 function doGet() {
-  var html = HtmlService.createTemplateFromFile('a.myproj.home.view');
+  var html = HtmlService.createTemplateFromFile('skywatch.home.view');
   html.mode = 'web';
   return html.evaluate()
       .setSandboxMode(HtmlService.SandboxMode.IFRAME);

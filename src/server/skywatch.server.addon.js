@@ -34,7 +34,7 @@ function onOpen(e) {
 
 
 function onShowSidebar() {
-  var html = HtmlService.createTemplateFromFile('a.myproj.home.view');
+  var html = HtmlService.createTemplateFromFile('skywatch.home.view');
   html.mode = 'addon';
   SpreadsheetApp.getUi()
       .showSidebar(html.evaluate()
