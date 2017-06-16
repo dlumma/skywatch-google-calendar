@@ -6,13 +6,22 @@
 2. Run `npm install -g gulp` if you do not already have the [gulp](http://gulpjs.com/) task runner installed globally.
 3. Clone this repository, `cd skywatch-google-calendar`, and run `npm install`. This will set up all of the local dependencies for the project.
 
-### Creating test, stage and production environ
+### Creating test, stage and production environment
 
-1. Create a [new Google Spreadsheet](https://docs.google.com/spreadsheets/create), and copy the ID of the file. The file ID is found in the URL to the spreadsheet:
-	docs.google.com/spreadsheets/d/***DRIVE_FILE_ID***/edit#gid=123
-2. Open the file *src/environments/dev/debug.local.config.js*, and replace DRIVE_FILE_ID with the ID that you copied.
-- Replace Ids for logFile and debugFile
-3. Create a new standalone [Google Apps Script](https://script.google.com) project, and copy the ID of the script. The file ID is found in the URL to the script project:
+1. Create a folder in Google Drive called 'Envs'
+2. Within Envs, create three folders: 'Dev', 'Tst', and 'Prd'
+3. Within each of the folders, do the following:
+4. Create two [new Google Spreadsheet](https://docs.google.com/spreadsheets/create), called:
+- devLogSpreadsheet, or tstLogSpreadsheet, or prdLogSpreadsheet (depending on the folder you are in)
+- devDebugSpreadsheet, or tstDebugSpreadsheet, or prdDebugSpreadsheet (in the corresponding folder)
+5. Copy each of the IDs of the files. The file ID is found in the URL to the spreadsheet:
+docs.google.com/spreadsheets/d/***DRIVE_FILE_ID***/edit#gid=123
+6. Open the file *src/environments/dev/debug.local.config.js*, and replace the default IDs with the IDs that you copied within corresponding dev environment files.
+- Replace IDs for:
+- configuration.sheets.debugSpreadsheetId
+- configuration.logSpreadsheetId
+Do the same for tst and prd environments.
+7. Create a new standalone [Google Apps Script](https://script.google.com) project, and copy the ID of the script. The file ID is found in the URL to the script project:
 	script.google.com/a/macros/google.com/d/***DRIVE_FILE_ID***/edit
 4. Perform the following commands:
 

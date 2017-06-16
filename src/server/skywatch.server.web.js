@@ -23,4 +23,5 @@ function doGet() {
   html.mode = 'web';
   return html.evaluate()
       .setSandboxMode(HtmlService.SandboxMode.IFRAME);
+      //.setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
 }

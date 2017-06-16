@@ -9,12 +9,17 @@
 
   <body>
     <div class="sample-container">
-      <button class="action" id="runServer" onclick="runServer_onclick();">Server</button>
-      <button id="runClient" onclick="runClient_onclick();">Client</button>
+      <button class="action" id="runServer" onclick="runServer_onclick();">Populate Forecasts in Google Calendar</button>
+    </div>
+    <div class="sample-container">
+      Requires Membership to SkyWatch Astrology: <a href="https://skywatchastrology.com/wp-login.php">https://skywatchastrology.com/wp-login.php</a> 
+    </div>
+    <div class="sample-container">
+    <iframe src="https://skywatchastrology.com/" style="width: 90%; height: 700px" marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" frameborder="0" allowtransparency="true"></iframe>
     </div>
   </body>
   <script>
     var mode = '<?!= mode ?>';
     <?!= include('skywatch.controller.client.js'); ?>
   </script>
-</html>
+  </html>
